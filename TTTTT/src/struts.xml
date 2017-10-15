@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <include file="struts-default.xml"/>
+
+    <package name="Lab2" extends="struts-default">
+
+        <action name="Hello" class="Lab2.MyAction"  method="getName">
+            <result name="success">/hello.jsp</result>
+            <result name="failure">/index.jsp</result>
+        </action>
+    </package>
+ <package name="com.snt.struts2" extends="struts-default">
+
+          <action name="Hello1" class="com.snt.struts2.action.RegisterAction"  method="Get">
+                <result name="success">/X.jsp</result>
+                <result name="failure">/2.jsp</result>
+            </action>
+
+            <action name="login" class="com.snt.struts2.action.RegisterAction"  method="GetX">
+                <result name="success"> /Y.jsp</result>
+                <result name="failure">/X.jsp</result>
+            </action>
+
+            <action name="FindAuthor" class="com.snt.struts2.action.RegisterAction"  method="FindByAuthor">
+                <result name="success">/FindByAurthor.jsp</result>
+                <result name="Failure1">/FindNull.jsp</result>
+               <result name="F2">/FindNullBook.jsp</result>
+            </action>
+
+            <action name="ChangeAuthor" class="com.snt.struts2.action.RegisterAction"  method="ChangeAuthor">
+                <result name="success">/EditAuthor.jsp</result>
+                <result name="failure">/4.jsp</result>
+            </action>
+
+            <action name="ChangePublisher" class="com.snt.struts2.action.RegisterAction"  method="ChangePublisher">
+                <result name="success">/EditPublisher.jsp</result>
+                <result name="failure">/5.jsp</result>
+            </action>
+
+            <action name="ChangePublishdate" class="com.snt.struts2.action.RegisterAction"  method="ChangePublishdate">
+                <result name="success">/EditPublishdate.jsp</result>
+                <result name="failure">/6.jsp</result>
+            </action>
+
+            <action name="ChangePrice" class="com.snt.struts2.action.RegisterAction"  method="ChangePrice">
+                <result name="success">/EditPrice.jsp</result>
+                <result name="failure">/7.jsp</result>
+            </action>
+
+
+            <action name="Delete" class="com.snt.struts2.action.RegisterAction"  method="delete">
+                <result name="success">/Delete.jsp</result>
+                <result name="success1">/Delete1.jsp</result>
+            </action>
+
+            <action name="Edit" class="com.snt.struts2.action.RegisterAction"  method="GetAllTitle">
+                <result name="success">/Edit.jsp</result>
+                <result name="failure">/9.jsp</result>
+            </action>
+
+             <action name="JudgeBook" class="com.snt.struts2.action.RegisterAction"  method="JudgeBook">
+                <result name="success">/AddBookSuccess.jsp</result>
+                <result name="failure">/AddBookFail.jsp</result>
+                <result name="failure2">/BookExit.jsp</result>
+                <result name="failure3">/BookTExit.jsp</result>
+            </action>
+
+            <action name="Detail" class="com.snt.struts2.action.RegisterAction"  method="GetDetail">
+                <result name="success">/Detail.jsp</result>
+                <result name="failure">/4.jsp</result>
+            </action>
+
+            <action name="GetAllAuthor" class="com.snt.struts2.action.RegisterAction"  method="GetAllAuthor">
+                <result name="success">/GetAllAuthor.jsp</result>
+                <result name="failure">/NoAuthorjsp.jsp</result>
+            </action>
+
+
+            <action name="EditDetail" class="com.snt.struts2.action.RegisterAction"  method="GetAllDetail">
+                <result name="success">/EditDetail.jsp</result>
+
+            </action>
+
+            <action name="ChooseEdit">
+
+               <result>/ChooseEdit.jsp</result>
+              </action>
+
+
+             <action name="GetNewAuthor">
+
+               <result>/4.jsp</result>
+              </action>
+
+
+             <action name="GetNewPublisher">
+                <result>/5.jsp</result>
+                 </action>
+
+             <action name="GetNewPublishdate">
+                <result>/6.jsp</result>
+                 </action>
+
+             <action name="GetNewPrice">
+                <result>/7.jsp</result>
+                 </action>
+
+
+
+
+    </package>
+
+
+</struts>
